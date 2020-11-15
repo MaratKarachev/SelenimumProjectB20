@@ -18,10 +18,10 @@ public class LoginForVytrack {
         driver.get("https://qa2.vytrack.com/user/login"); // opens the login page for Vytrack application
 
         driver.findElement(By.id("prependedInput")).sendKeys("User163");
-        driver.findElement(By.id("prependedInput2")).sendKeys("UserUser123"+ Keys.ENTER);
+        driver.findElement(By.id("prependedInput2")).sendKeys("UserUser123" + Keys.ENTER);
         driver.findElement(By.className("nav-multilevel main-menu")).sendKeys(Keys.ENTER);
         driver.findElement(By.className("title title-level-2")).sendKeys(Keys.ENTER);
 
-
+        driver.close();
     }
 }
